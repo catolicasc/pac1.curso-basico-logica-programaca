@@ -1,3 +1,72 @@
+
+# 🧠 Introdução ao CSS – Conceitos Fundamentais
+
+O **CSS (Cascading Style Sheets)** é a linguagem usada para definir a aparência e o layout de documentos HTML.  
+Com ele, você controla **cores, tamanhos, espaçamentos, fontes e posicionamentos** dos elementos de uma página web.
+
+---
+
+## 🎯 Estrutura Básica de um Arquivo CSS
+
+Um arquivo CSS é composto por **regras de estilo**, e cada regra segue esta estrutura:
+
+```css
+seletor {
+    propriedade: valor;
+}
+```
+
+### 🔹 Partes de uma Regra CSS:
+1. **Seletor:** indica qual elemento HTML o estilo será aplicado.  
+   Exemplo: `p`, `.titulo`, `#menu`, `nav ul li`
+2. **Propriedade:** define o aspecto visual a ser modificado.  
+   Exemplo: `color`, `font-size`, `margin`, `background-color`
+3. **Valor:** especifica como a propriedade será aplicada.  
+   Exemplo: `red`, `16px`, `auto`, `center`
+
+---
+
+## 🧩 Tipos de Seletores
+
+| Tipo de Seletor | Exemplo | Aplica-se a | Descrição |
+|------------------|----------|-------------|------------|
+| **Elemento** | `p {}` | Todos os parágrafos `<p>` | Altera todos os elementos de uma tag específica. |
+| **Classe** | `.botao {}` | Elementos com `class="botao"` | Ideal para aplicar o mesmo estilo a vários elementos. |
+| **ID** | `#menu {}` | Elemento com `id="menu"` | Deve ser único por página. |
+| **Agrupamento** | `h1, h2, h3 {}` | Vários elementos | Aplica a mesma regra a todos os listados. |
+| **Descendente** | `nav a {}` | Links dentro de `nav` | Aplica o estilo apenas quando o elemento estiver dentro do outro. |
+| **Universal** | `* {}` | Todos os elementos | Aplica estilo global (ex: reset de margens). |
+| **Pseudo-classe** | `a:hover {}` | Estados de um elemento | Altera aparência em estados (ex: quando o mouse passa sobre). |
+
+---
+
+## 💡 Exemplo Prático
+
+```css
+/* Exemplo de estilo aplicado a um botão */
+button {
+    background-color: blue; /* Cor de fundo azul */
+    color: white;           /* Texto branco */
+    border-radius: 8px;     /* Bordas arredondadas */
+    padding: 10px 20px;     /* Espaçamento interno */
+    cursor: pointer;        /* Cursor tipo "mão" */
+}
+```
+
+Esse bloco define a aparência de todos os botões `<button>` da página.
+
+---
+
+## 🧱 Organização e Boas Práticas
+
+1. Agrupe seletores semelhantes (ex: `h1, h2, h3`).
+2. Utilize classes para reaproveitar estilos entre páginas.
+3. Use comentários (`/* comentário */`) para explicar blocos de código.
+4. Centralize o CSS em um único arquivo externo (`style.css`).
+5. Sempre valide a sintaxe e evite duplicidades.
+
+---
+
 # Documentação Técnica e Didática – Estilos CSS do Projeto RoadMapC
 
 Este documento explica os estilos definidos no arquivo `style.css`, detalhando a função de cada seletor e seu papel na construção visual do site.
